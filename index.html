@@ -1,40 +1,4 @@
 
-<style>
-body {
-	background-color: #0078d7;
-     }
-
-h1 {
-	color: white;
-	font-family: "Segoe UI", Helvetica, Arial;
-	font-size: 750%;
-	font-weight: normal;
-   }
-h2 {
-	color: white;
-	font-family: "Segoe UI", Helvetica, Arial;
-	font-size: 250%;
-	font-weight: normal;
-   }
-p {
-	color: white;
-	font-family: "Segoe UI", Helvetica, Arial;
-	font-size: 200%;
-  }
-img {
-	width: auto;
-	height: 25%;
-	float: left;
-	padding-right: 2%;
-    }
-div {
-	width: auto;
-	padding: 7%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-    }
-</style>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,18 +7,64 @@ div {
 	<link rel="icon" type="image/x-icon" href="https://gemmebacon.github.io/backup-website/yes.ico" sizes="64x64" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
+
+	<style>
+
+html {
+	font-size: 0.8vw;
+}
+body {
+	color: white;
+	background-color: #0078d7;
+	font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+	margin: 0;
+    }
+h1 {
+	font-size: 750%;
+	font-weight: normal;
+   }
+h2 {
+	font-size: 250%;
+	font-weight: normal;
+   }
+img {
+	height: 14vw;
+    }
+#one, #two {
+	padding: 1% 7%;
+}
+#two {
+	align-items: center;
+	display: flex;
+	gap: 2%;
+	margin-top: -1%;
+}
+#one p {
+    font-size: 200%;
+}
+#two p {
+    font-size: 150%;
+}
+
+</style>
 </head>
 <body>
-	<div>
-	<h1>:(</h1>
-	<h2>Error 504: Gateway Timeout.</h2>
-	<p>The server timed out and didn't respond in time. It is most likely down. Please try again later.</p>
-	<p>The server administror has been notified and will try to get the server back up and running as soon as possible.</p>
-	<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/504"><img src="https://gemmebacon.github.io/backup-website/files/504.png" alt="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/504"></a>
+	<div id="one">
+		<h1>:(</h1>
+		<h2>Error 504: Gateway Timeout.</h2>
+		<p>The server timed out and didn't respond in time. It is most likely down. Please try again later.</p>
+		<p>The server administrator has been notified and will try to get the server back up and running as soon as possible.</p>
 	</div>
-	<p style='font-size: 150%'>By the way, this is running on github.</p>
-	<p style='font-size: 150%'>For more information, join my <a href="https://discord.gg/BfAmuPNbNq">Discord server.</a></p>
-	<p style='font-size: 150%'>Or send me an email at <a href="mailto:gemmebacon@gmail.com">gemmebacon@gmail.com</a></p>
+	<div id="two">
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/504"><img src="https://gemmebacon.github.io/backup-website/files/504.png" alt="504 Gateway Timeout Status Code Reference"></a>
+		<div>
+			<p>By the way, this is running on github.</p>
+			<p>For more information, join my <a href="https://discord.gg/BfAmuPNbNq">Discord server.</a></p>
+			<p>Or send me an email at <a href="mailto:gemmebacon@gmail.com">gemmebacon@gmail.com</a></p>
+			<p>You can see the newest backup of the Weekly CPU <a href="https://gemmebacon.github.io/backup-website/newest-weekly-cpu/">here.</a></p>
+		</div>
+	</div>
+	
 </body>
 </html>
 
